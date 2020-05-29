@@ -2,11 +2,11 @@ package easy
 
 import "sort"
 
-func main() {
-	nums := []int{1, 3, 5, 6}
-	target := 0
-	println(searchInsert(nums, target))
-}
+//func main() {
+//	nums := []int{1, 3, 5, 6}
+//	target := 0
+//	println(searchInsert(nums, target))
+//}
 
 /**
 35. 搜索插入位置

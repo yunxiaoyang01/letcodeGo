@@ -5,11 +5,11 @@ import (
 	"strings"
 )
 
-func main() {
-	var x = -2147483648
-	println(reverse(x))
-
-}
+//func main() {
+//	var x = -2147483648
+//	println(reverse(x))
+//
+//}
 
 func reverse(x int) int {
 	if x >= 0 && x < 10 {

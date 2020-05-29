@@ -1,8 +1,8 @@
 package easy
 
-func main() {
-	println(titleToNumber("ABA"))
-}
+//func main() {
+//	println(titleToNumber("ABA"))
+//}
 
 func titleToNumber(s string) int {
 	sum := 0

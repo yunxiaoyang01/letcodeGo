@@ -1,9 +1,9 @@
 package easy
 
-func main() {
-
-	println(isValid("[}"))
-}
+//func main() {
+//
+//	println(isValid("[}"))
+//}
 func isValid(s string) bool {
 	var c []byte
 	symbol := map[byte]byte{

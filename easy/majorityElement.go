@@ -2,10 +2,10 @@ package easy
 
 import "sort"
 
-func main() {
-	nums := []int{3, 2, 3}
-	println(majorityElement(nums))
-}
+//func main() {
+//	nums := []int{3, 2, 3}
+//	println(majorityElement(nums))
+//}
 
 func majorityElement(nums []int) int {
 	if len(nums) == 1 {

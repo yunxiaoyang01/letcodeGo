@@ -5,13 +5,13 @@ import (
 	"strings"
 )
 
-func main() {
-	var strs []string
-	strs = append(strs, "dog")
-	strs = append(strs, "racecar")
-	strs = append(strs, "car")
-	println(longestCommonPrefix(strs))
-}
+//func main() {
+//	var strs []string
+//	strs = append(strs, "dog")
+//	strs = append(strs, "racecar")
+//	strs = append(strs, "car")
+//	println(longestCommonPrefix(strs))
+//}
 func longestCommonPrefix(strs []string) string {
 	n := len(strs)
 	if n == 0 {

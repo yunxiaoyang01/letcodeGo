@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-func main() {
-	println(countAndSay(3))
-}
+//func main() {
+//	println(countAndSay(3))
+//}
 
 func countAndSay(n int) string {
 	// 递归出口

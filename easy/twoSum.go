@@ -1,12 +1,12 @@
 package easy
 
-func main() {
-	numbers := []int{2, 7, 11, 15}
-	target := 9
-	for _, x := range twoSum(numbers, target) {
-		println(x)
-	}
-}
+//func main() {
+//	numbers := []int{2, 7, 11, 15}
+//	target := 9
+//	for _, x := range twoSum(numbers, target) {
+//		println(x)
+//	}
+//}
 
 func twoSum(numbers []int, target int) []int {
 

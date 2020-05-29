@@ -1,15 +1,15 @@
 package easy
 
-func main() {
-	a := generate(5)
-	for i := 0; i < 5; i++ {
-		for j := 0; j <= i; j++ {
-			print(a[i][j])
-			print(" ")
-		}
-		println()
-	}
-}
+//func main() {
+//	a := generate(5)
+//	for i := 0; i < 5; i++ {
+//		for j := 0; j <= i; j++ {
+//			print(a[i][j])
+//			print(" ")
+//		}
+//		println()
+//	}
+//}
 
 func generate(numRows int) [][]int {
 	result := make([][]int, 0)

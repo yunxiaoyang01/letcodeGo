@@ -5,9 +5,9 @@ import (
 	"unicode"
 )
 
-func main() {
-	println(isPalindrome1251("A man, a plan, a canal: Panama"))
-}
+//func main() {
+//	println(isPalindrome1251("A man, a plan, a canal: Panama"))
+//}
 func isPalindrome125(s string) bool {
 
 	s = strings.ToLower(s) // 字母转换为小写

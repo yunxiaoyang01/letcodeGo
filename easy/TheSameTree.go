@@ -1,8 +1,8 @@
 package easy
 
-func main() {
-
-}
+//func main() {
+//
+//}
 
 type TreeNode struct {
 	Val   int

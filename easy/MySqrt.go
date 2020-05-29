@@ -2,9 +2,9 @@ package easy
 
 import "math"
 
-func main() {
-	println(mySqrt1(8))
-}
+//func main() {
+//	println(mySqrt1(8))
+//}
 func mySqrt(x int) int {
 	result := math.Sqrt(float64(x))
 	k, _ := math.Modf(result)

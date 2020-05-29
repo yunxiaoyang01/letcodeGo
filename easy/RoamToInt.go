@@ -2,9 +2,9 @@ package easy
 
 import "strings"
 
-func main() {
-	println(romanToInt("MCMXCIV"))
-}
+//func main() {
+//	println(romanToInt("MCMXCIV"))
+//}
 func romanToInt(s string) int {
 	map1 := map[string]int{ //正常情况
 		"I": 1,

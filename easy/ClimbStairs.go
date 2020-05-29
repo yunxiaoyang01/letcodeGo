@@ -1,8 +1,8 @@
 package easy
 
-func main() {
-	println(climbStairs(45))
-}
+//func main() {
+//	println(climbStairs(45))
+//}
 
 func climbStairs(n int) int {
 	if n == 1 {

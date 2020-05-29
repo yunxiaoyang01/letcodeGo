@@ -1,8 +1,8 @@
 package easy
 
-func main() {
-	println(convertToTitle(52))
-}
+//func main() {
+//	println(convertToTitle(52))
+//}
 
 func convertToTitle(n int) string {
 	cons := map[int]string{

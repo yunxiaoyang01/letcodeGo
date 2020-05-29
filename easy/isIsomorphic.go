@@ -2,9 +2,9 @@ package easy
 
 import "strings"
 
-func main() {
-	println(isIsomorphic("foo", "bar"))
-}
+//func main() {
+//	println(isIsomorphic("foo", "bar"))
+//}
 
 func isIsomorphic(s string, t string) bool {
 	//循环遍历字符串，看当前字符，在后面出现的位置如果两个字符串出现的位置不一样则false

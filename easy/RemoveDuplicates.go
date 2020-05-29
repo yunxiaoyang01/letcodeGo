@@ -1,9 +1,9 @@
 package easy
 
-func main() {
-	nums := []int{0, 1, 2, 2, 3, 0, 4, 2}
-	println(removeElement(nums, 2))
-}
+//func main() {
+//	nums := []int{0, 1, 2, 2, 3, 0, 4, 2}
+//	println(removeElement(nums, 2))
+//}
 
 func removeDuplicates(nums []int) int {
 	k := 0

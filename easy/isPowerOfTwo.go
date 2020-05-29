@@ -1,8 +1,8 @@
 package easy
 
-func main() {
-	println(isPowerOfTwo(2))
-}
+//func main() {
+//	println(isPowerOfTwo(2))
+//}
 func isPowerOfTwo(n int) bool {
 	if n == 0 {
 		return false

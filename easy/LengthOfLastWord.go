@@ -2,9 +2,9 @@ package easy
 
 import "strings"
 
-func main() {
-	println(lengthOfLastWord("a "))
-}
+//func main() {
+//	println(lengthOfLastWord("a "))
+//}
 
 func lengthOfLastWord(s string) int {
 	slen := 0

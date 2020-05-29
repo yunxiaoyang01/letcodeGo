@@ -2,9 +2,9 @@ package easy
 
 import "strconv"
 
-func main() {
-
-}
+//func main() {
+//
+//}
 func isPalindrome(x int) bool {
 	xstr := strconv.Itoa(x)
 	xDao := reverseString(xstr)
