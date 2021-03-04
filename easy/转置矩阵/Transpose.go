@@ -1,4 +1,6 @@
-package easy
+package main
+
+import "fmt"
 
 func transpose(matrix [][]int) [][]int {
 	n,m := len(matrix) ,len(matrix[0])
@@ -19,5 +21,8 @@ func transpose(matrix [][]int) [][]int {
 }
 
 func main()  {
-
+	matrix := [][]int{{1,2,3},{4,5,6},{7,8,9}}
+	result := transpose(matrix)
+	s :=fmt.Sprintf("%d",result)
+	fmt.Println(s)
 }
