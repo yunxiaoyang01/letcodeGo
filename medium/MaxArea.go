@@ -1,9 +1,6 @@
 package medium
 
-//letCode 盛最多水的容器
-func main() {
 
-}
 func maxArea(height []int) int {
 	maxArea := 0
 	for i := 0; i < len(height); i++ {

@@ -1,9 +1,6 @@
 package medium
 
-func main() {
-	var nums = []int{-1, 0, 1, 2, -1, -4}
-	println(threeSum2(nums))
-}
+
 func threeSum1(nums []int) [][]int { //方案一错误，不能去重
 	num := make([][]int, 0)
 	for i := 0; i < len(nums); i++ {

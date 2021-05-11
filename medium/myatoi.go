@@ -6,11 +6,7 @@ import (
 	"strings"
 )
 
-func main() {
 
-	//println(myAtoiSecond("-+1"))
-	println(myAoti("-+1"))
-}
 func myAtoiFisrt(str string) int {
 	//sign 表示符号
 	//x 表示整数

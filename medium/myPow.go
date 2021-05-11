@@ -1,9 +1,5 @@
 package medium
 
-func main() {
-
-	println(myPow1(2, 10))
-}
 
 func myPow(x float64, n int) float64 {
 	if n == 0 {

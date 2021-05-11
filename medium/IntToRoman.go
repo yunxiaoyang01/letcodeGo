@@ -1,8 +1,5 @@
 package medium
 
-func main() {
-	println(easyIntToRoman(40))
-}
 func intToRoman(num int) string {
 	roman := ""
 	if num/1000 != 0 {
