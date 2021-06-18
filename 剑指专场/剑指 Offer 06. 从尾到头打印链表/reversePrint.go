@@ -8,7 +8,7 @@ type ListNode struct {
 	Val  int
 	Next *ListNode
 }
-
+// 暴力解法
 func reversePrint(head *ListNode) []int {
 	res := []int{}
 	for head != nil {
