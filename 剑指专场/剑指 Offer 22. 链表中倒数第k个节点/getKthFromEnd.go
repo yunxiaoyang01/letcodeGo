@@ -24,7 +24,7 @@ func main() {
 		},
 	}
 	k := 2
-	res := getKthFromEnd(head, k)
+	res := getKthFromEndV2(head, k)
 	for res != nil {
 		fmt.Println(res.Val)
 		res = res.Next
@@ -38,11 +38,25 @@ func getKthFromEnd(head *ListNode, k int) *ListNode {
 		temp = temp.Next
 		sum += 1
 	}
-	count := sum - k 
+	count := sum - k
 
-	for count > 0 {
+	for count != 0 {
 		head = head.Next
 		count--
 	}
 	return head
+}
+
+// 双指针走法
+func getKthFromEndV2(head *ListNode, k int) *ListNode {
+	fast := head
+	slow := head
+	temp := 0
+	for fast != nil {
+		if temp >= k {
+			slow = slow.Next
+		}
+		fast = fast.Next
+	}
+	return slow
 }
