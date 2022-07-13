@@ -6,48 +6,41 @@ import (
 )
 
 type MinStack struct {
-	stack        []int
-	min, lastMin int
+	stack    []int
+	minStack []int
 }
 
-/** initialize your data structure here. */
 func Constructor() MinStack {
 	return MinStack{
-		min:     math.MaxInt,
-		lastMin: math.MaxInt,
+		stack:    []int{},
+		minStack: []int{math.MaxInt64},
 	}
 }
 
 func (this *MinStack) Push(x int) {
-	if this.min > x {
-		this.lastMin, this.min = this.min, x
-	}
 	this.stack = append(this.stack, x)
+	top := this.minStack[len(this.minStack)-1]
+	this.minStack = append(this.minStack, min(x, top))
 }
 
 func (this *MinStack) Pop() {
-	if len(this.stack) == 0 {
-		return
-	}
-	val := this.stack[len(this.stack)-1]
 	this.stack = this.stack[:len(this.stack)-1]
-	if val == this.min {
-		this.min = this.lastMin
-	}
+	this.minStack = this.minStack[:len(this.minStack)-1]
 }
 
 func (this *MinStack) Top() int {
-	if len(this.stack) == 0 {
-		return -1
-	}
 	return this.stack[len(this.stack)-1]
 }
 
 func (this *MinStack) Min() int {
-	if len(this.stack) == 1 {
-		return this.stack[0]
+	return this.minStack[len(this.minStack)-1]
+}
+
+func min(x, y int) int {
+	if x < y {
+		return x
 	}
-	return this.min
+	return y
 }
 
 func main() {
