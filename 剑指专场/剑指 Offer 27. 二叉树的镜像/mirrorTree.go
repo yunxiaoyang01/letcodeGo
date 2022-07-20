@@ -9,15 +9,16 @@ type TreeNode struct {
 func main() {
 
 }
+
 // 题解 ：
 //		递归找到找到根部左右节点，然后将左右节点互换
 func mirrorTree(root *TreeNode) *TreeNode {
 	if root == nil {
 		return nil
 	}
-	leftTreeNode := mirrorTree(root.Left)
-	rightTreeNode := mirrorTree(root.Right)
-	root.Left = rightTreeNode
-	root.Right = leftTreeNode
+	left := mirrorTree(root.Left)
+	right := mirrorTree(root.Right)
+	root.Left = right
+	root.Right = left
 	return root
 }
