@@ -48,15 +48,17 @@ func getKthFromEnd(head *ListNode, k int) *ListNode {
 }
 
 // 双指针走法
+// 题解： 快慢指针 让快指针先走k步，然后快慢指针一起走，快指针走到头，slow指针走到的位置就是倒数第k个节点
 func getKthFromEndV2(head *ListNode, k int) *ListNode {
 	fast := head
 	slow := head
-	temp := 0
-	for fast != nil {
-		if temp >= k {
-			slow = slow.Next
-		}
+	for k > 0 {
 		fast = fast.Next
+		k--
+	}
+	for fast != nil {
+		fast = fast.Next
+		slow = slow.Next
 	}
 	return slow
 }
