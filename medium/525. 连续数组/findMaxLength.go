@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	nums := []int{0, 1, 0}
+	nums := []int{0, 0, 1, 1, 1, 0, 0, 0}
 	fmt.Printf("%d", findMaxLength(nums))
 }
 
