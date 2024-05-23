@@ -5,37 +5,23 @@ import (
 )
 
 func search(nums []int, target int) int {
-	n := len(nums)
-	if n == 0 {
-		return -1
-	}
-	if n == 1 {
-		if target == nums[0] {
-			return 0
-		} else {
-			return -1
-		}
-	}
-	l, r := 0, n-1
-	for l <= r {
-		mid := (l + r) / 2
+	left, right := 0, len(nums)-1
+	for left <= right {
+		mid := (right-left)/2 + left
 		if nums[mid] == target {
 			return mid
 		}
-		if nums[mid] == nums[l] && nums[mid] == nums[r] {
-			l++
-			r--
-		} else if nums[l] <= nums[mid] {
-			if nums[l] < target && target < nums[mid] {
-				r = mid - 1
+		if nums[mid] >= nums[left] {
+			if nums[mid] > target && target >= nums[left] {
+				right = mid - 1
 			} else {
-				l = mid + 1
+				left = mid + 1
 			}
 		} else {
-			if nums[mid] < target && target < nums[n-1] {
-				l = mid + 1
+			if nums[mid] < target && target <= nums[right] {
+				left = mid + 1
 			} else {
-				r = mid - 1
+				right = mid - 1
 			}
 		}
 	}
